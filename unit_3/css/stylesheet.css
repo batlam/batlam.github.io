@@ -1,0 +1,53 @@
+nav{
+	font-size: 12px;
+	font-family: Arial;
+	color: gray;
+}
+
+h1 {
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: 700;
+	color: #FF47FC; 
+}
+
+main {
+	font-family: Arial;
+	font-size: 14px;
+	color: gray;
+}
+
+body {
+	font-family: Arial;
+	font-size: 14px;
+	color: gray;
+	font-weight: 200;
+}
+
+figure {
+	width: 300px;
+	display: inline-block;
+}
+
+figcaption{
+	font-weight: 300;
+}
+
+
+#slogan{
+	font-style: italic;
+}
+
+.images{
+	width: 300px;
+}
+
+.gradetitle{
+	color: #FF47FC;
+	font-weight: 600;
+}
+
+#email{
+	color: #39E8DC;
+	
+}
