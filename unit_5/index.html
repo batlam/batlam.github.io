@@ -7,27 +7,44 @@
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 </head>
 
+<div class="wrapper">
+
 <body>
 
-	<header>
-		<nav>
+	<header class=clearfix>
+
+		<h1 id="title">Teacher<br>Corner</h1>
+		<!-- content overlaps with padding on top only when eliminate padding-->
+
+		<nav id="gradenav">
 			<a href="#">K-2</a>
 			<a href="#">3-5</a>
 			<a href="#">6-8</a>
 			<a href="#">9-12</a>
-			<a href="#">Teacher Sweeps</a>
-			<a href="#">Student Contests</a>
-			</nav>
+			<a href="#">K-12</a>
+		</nav>
+
+		<nav id="subjectnav">
+			<a href="#">teacher sweeps</a>
+			<a href="#">student contests</a>
+			<a href="#">english</a>
+			<a href="#">math</a>
+			<a href="#">social studies</a>
+			<a href="#">science</a>
+		</nav>
+		<!-- no bottom padding applied on float right-->
 		
-		<h1 id="title">Teacher<br>Corner</h1>
 	</header>
 
-	<main>
-		<p id="slogan"> Free content for K-12 teachers.</p>
-		<p>We partner with non-profits and corporations to develop unique and valuable free content for teachers.</p>
-	</main>
-
 <section>
+
+	<aside>
+		<!-- should this tag be an 'aside' i can't style the original <main> tag should it be under the same section as figure -->
+		<p id="slogan"> Free content for K-12 teachers.</p>
+		<p id="description">We partner with non-profits, corporations and government agencies to develop unique and valuable free content for teachers to use in their classrooms.</p>
+		<p id="list">Send me an email when a new program is is developed.</p>
+	</aside>
+
 	<figure class="features">
 		<img class="images" src="images/apple_2.jpg" alt="apple" title="k-2 featured">
 		<figcaption><span class="gradetitle">K-2 Featured</span> The Apple Foundation partnered with us to help you teach key math concepts using apples.</figcaption>
@@ -40,7 +57,8 @@
 
 	<figure class="features">
 		<img class="images" src="images/graph_2.jpg" alt="graph" title="6-8 featured">
-		<figcaption><span class="gradetitle">6-8 Featured</span> We worked with The Actuarial Foundation to develop an interactive math activity that teaches graphing.</figcaption>
+		<figcaption><span class="gradetitle">6-8 Featured</span> We worked with The Actuarial Foundation to develop an interactive graphing math activity.</figcaption>
+		<!-- fixed box height to fix text, why is there margins between figures-->
 	</figure>
 
 	<figure class="features">
@@ -54,6 +72,8 @@
 </footer>
 
 </body>
+
+</div>
 
 
 </html>

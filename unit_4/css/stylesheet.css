@@ -1,17 +1,22 @@
-@import url(https://fonts.googleapis.com/css?family=Rubik);
 @import url(https://fonts.googleapis.com/css?family=Quattrocento);
-@import url(https://fonts.googleapis.com/css?family=Lora);
 @import url(https://fonts.googleapis.com/css?family=Biryani);
-@import url(https://fonts.googleapis.com/css?family=Muli:400,300italic);
+
+* { 	
+	padding: 0; 	
+	margin: 0; 
+}
+
+nav {
+	text-align: right;
+	} 
 
 nav a{
 	font-size: 12px;
 	font-family:'Biryani', sans-serif;
 	color: #FCFFF5;
 	text-decoration: none;
-	text-align: center;
+	padding-left: 40px;
 	padding-right: 30px;
-	padding-left: 30px;
 }
 
 h1 {
@@ -20,45 +25,57 @@ h1 {
 	color: #FF7F66; 
 	text-align: center;
 	background-color: #3E606F;
-	padding-top: 50px
-}
-
-ul {
-	list-style: none;
-
-}
-
-body {
-	font-family: 'Quattrocento', serif;
-	font-size: 16px;
-	line-height: 1.5em;
-	color: #FCFFF5;
-	background-color: #3E606F;
-}
-
-h1 {
-	font-family:'Biryani', sans-serif;
-	font-size: 42px;
-	color: #FF7F66; 
-	text-align: center;
-	background-color: #3E606F;
-	padding-top: 50px
+	padding-top: 30px;
+	line-height: 1;
 }
 
 main {
 	text-align: center;
-	letter-spacing: .01em;
+	letter-spacing: 1;
 }
+
+/*ul {
+	list-style: none;
+
+}*/
+
+body {
+	font-family: 'Quattrocento', serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #FCFFF5;
+	background-color: #3E606F;
+}
+
+/*h1 {
+	font-family:'Biryani', sans-serif;
+	font-size: 42px;
+	color: #FF7F66; 
+	text-align: center;
+	background-color: #3E606F;
+	padding-top: 50px
+}*/
+/*
+main {
+	text-align: center;
+	letter-spacing: .01em;
+	margin: 0;
+	padding: 0;
+}*/
 
 
 figure {
 	width: 300px;
 	display: inline-block;
-	padding-top: 40px;
+	padding-top: 30px;
 }
 
 figcaption {
 	color: #FCFFF5;
+}
+
+footer {
+	padding-top: 75px;
 }
 
 footer a {
@@ -70,10 +87,13 @@ footer a {
 }
 
 
+
 #slogan{
 	font-size: 18px;
 	font-family: 'Quattrocento', serif;
 	letter-spacing: .1em;
+	padding: 0;
+	margin: 0;
 }
 
 .images{
@@ -84,6 +104,7 @@ footer a {
 	font-family: 'Biryani', sans-serif;
 	text-transform: uppercase;
 	color: #CAFCD8;
+	text-decoration: underline;
 }
 
 #email{

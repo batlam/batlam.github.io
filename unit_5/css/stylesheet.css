@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Biryani);
+
+*{ 	
+	padding: 0; 	
+	margin: 0; 
+}
+
+
+div {
+
+}
+
+body {
+	font-family: 'Quattrocento', serif;
+/*	font-size: 16px;*/
+	font-size: 1em;
+	/*line-height: 1.5;*/
+	line-height: 1.5em;
+	color: #FCFFF5;
+	background-color: #3E606F;
+}
+
+header {
+	background-color: #FFED74;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+h1 {
+	font-family:'Biryani', sans-serif;
+	/*font-size: 16px;*/
+	font-size: 2.6em;
+	color: #FF7F66; 
+/*	text-align: center;*/
+	background-color: #3E606F;
+/*	padding-top: 30px;*/
+	line-height: 1;
+}
+
+nav {
+	background-color: #E8C66A;
+	border: 1px black solid;
+	padding: 20px;
+/*	text-align: right;*/
+
+} 
+
+nav a{
+	font-size: .75em;
+	/*font-size: 12px;*/
+	font-family:'Biryani', sans-serif;
+	color: #FCFFF5;
+	text-decoration: none;
+	display: block;
+	padding-left: 30px;
+	padding-right: 30px;
+	float: right;
+}
+
+
+aside {
+	background-color: #FFC675;
+	border: 1px black solid;
+	padding: 20px;
+	/*text-align: center;*/
+	letter-spacing: 1;
+	width: 645px;
+
+}
+
+section {
+	background-color: #FFE2B8;
+	border: 1px black solid;
+	padding: 20px;
+
+}
+
+figure {
+	background-color: #E89C6C;
+	border: 1px black solid;
+	padding: 20px;
+	width: 300px;
+	display: inline-block;
+	margin: auto;
+/*	padding-top: 30px;*/
+}
+
+figcaption {
+	color: #FCFFF5;
+}
+
+footer {
+	background-color: #FF957E;
+	border: 1px black solid;
+	padding: 20px;
+/*	float: left;*/
+}
+
+footer a {
+	font-size: 12px;
+	font-family:'Biryani', sans-serif;
+	color: #FCFFF5;
+	text-decoration: none;
+	/*float: left;*/
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "hello";
+  clear: both;
+  height: 0;
+}
+
+#slogan{
+	font-size: 1.12em;
+	font-family: 'Quattrocento', serif;
+	letter-spacing: .1em;
+	padding: 0;
+	margin: 0;
+}
+
+#description{
+	margin-top: 40px;
+}
+
+#list{
+	margin-top: 50px;
+}
+
+
+.images{
+	width: 300px;
+}
+
+.gradetitle{
+	font-family: 'Biryani', sans-serif;
+	text-transform: uppercase;
+	color: #CAFCD8;
+	text-decoration: underline;
+}
+
+#email{
+	color: #39E8DC;
+	
+}
+
+#title{
+	/*letter-spacing: .auto;*/
+}
