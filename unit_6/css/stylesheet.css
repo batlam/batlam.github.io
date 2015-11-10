@@ -1,15 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Quattrocento);
 @import url(https://fonts.googleapis.com/css?family=Biryani);
 
-* {
-	padding: 0;
-	margin: 0;
-}
-
-div {
-
-}
-
 body {
 	font-family: 'Quattrocento', serif;
 	font-size: 16px;
@@ -26,76 +17,71 @@ header {
 
 h1 {
 	font-family:'Biryani', sans-serif;
-	/*font-size: 16px;*/
 	font-size: 2.6em;
 	color: #FF7F66; 
-/*	text-align: center;*/
 	background-color: #3E606F;
 	line-height: 1;
 	padding-top: 5px;
+	display: block;
+	float: left;
 }
 
 nav {
 	background-color: #E8C66A;
 	border: 1px black solid;
-	padding: 20px;
+	padding: 5px;
 	text-align: right;
-
+	width: 62%;
+	margin: 2px;
+	float: right;
+	/*display: block;*/
+	
 } 
 
 nav a{
 	font-size: .75em;
-	/*font-size: 12px;*/
 	font-family:'Biryani', sans-serif;
 	color: #FCFFF5;
 	text-decoration: none;
-	/*display: block;*/
 	padding-left: 30px;
 	padding-right: 30px;
-/*	float: right;*/
 }
 
 a:hover {
- 	background-color: black
-}
-
-
-main {
-	background-color: #FFC675;
-	border: 1px black solid;
-	padding: 20px;
-	/*text-align: center;*/
-	letter-spacing: 1;
-	width: 645px;
-
+ 	color: black;
 }
 
 section {
 	background-color: #FFE2B8;
 	border: 1px black solid;
 	padding: 20px;
+}
 
+main {
+	/*background-color: #FFC675;*/
+	/*border: 1px black solid;
+	padding: 20px;*/
+/*	letter-spacing: 1;*/
+	/*width: 30%;*/
 }
 
 figure {
-	background-color: #E89C6C;
 	border: 1px black solid;
 	padding: 20px;
-	width: 300px;
+	width: 400px;
+	/*width: 40%;*/
 	display: inline-block;
-/*	margin: auto;*/
-/*	padding-top: 30px;*/
 }
 
 figcaption {
 	color: #FCFFF5;
+	padding-bottom: 5px; 
 }
 
 footer {
 	background-color: #FF957E;
 	border: 1px black solid;
 	padding: 20px;
-/*	float: left;*/
 }
 
 footer a {
@@ -103,7 +89,6 @@ footer a {
 	font-family:'Biryani', sans-serif;
 	color: #FCFFF5;
 	text-decoration: none;
-	/*float: left;*/
 }
 
 .clearfix:after {
@@ -120,20 +105,21 @@ footer a {
 	font-family: 'Quattrocento', serif;
 	letter-spacing: .1em;
 	padding: 0;
-	margin: 0;
+	margin-bottom: 20px;
 }
 
 #description{
-	margin-top: 40px;
+	font-size: 1.1em;
+	margin-top: 80px;
 }
 
 #list{
-	margin-top: 50px;
+	margin-top: 125px;
 }
 
 
-.images{
-	width: 300px;
+figure img{
+	width: 400px;
 }
 
 .gradetitle{
@@ -143,11 +129,37 @@ footer a {
 	text-decoration: underline;
 }
 
-#email{
+
+#two_column{
+	background-color: #FFB7CF;
+	border: 1px black solid;
+	padding: 20 px;
+}
+
+#left{
+	background-color: #E582A2;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 30%;
+	position: center;
+	letter-spacing: 1;
+	margin-top: 170px;
+
+}
+
+#right{
+	background-color: #E55B88;
+	border: 1px black solid;
+	padding: 20px;
+	float: right;
+	width: 62%;
+}
+
+
+footer p{
 	color: #39E8DC;
 	
 }
 
-#title{
-	/*letter-spacing: .auto;*/
-}
+
