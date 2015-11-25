@@ -1,0 +1,267 @@
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Biryani);
+*,
+*:before,
+*:after {
+	margin:0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Quattrocento', serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #FCFFF5;
+	background-color: #80B7C5;
+}
+
+header {
+	background-color: #80B7C5;
+	border: 1px black solid;
+	padding: 1%;
+}
+
+h1 {
+	font-family:'Biryani', sans-serif;
+	font-size: 2.6em;
+	color: #FA064D;
+	background-color: #3E606F;
+	display: block;
+	float: left;
+	line-height: 1em;
+	padding-top: .5%;
+	
+}
+
+nav {
+	background-color: #80B7C5;
+	/*border: 1px black solid;*/
+	text-align: right;
+	float: right;
+	width: 80%;
+	padding: .5%;
+	margin: .1%;
+	/*display: block;*/
+	
+} 
+
+nav a{
+	font-size: .75em;
+	font-family:'Biryani', sans-serif;
+	color: #FCFFF5;
+	text-decoration: none;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+a:hover {
+ 	color: black;
+}
+
+section {
+	background-color: #80B7C5;
+	/*border: 1px black solid;*/
+	/*padding: 20px;*/
+}
+
+main {
+	background-color: #80B7C5;
+	/*border: 1px black solid;*/
+	padding: 1%;
+	float: left;
+	width: 35%;
+	letter-spacing: 2;
+	margin-top: 12%;
+}
+
+figure {
+	display: block;
+	float: left;
+	width: 50%;
+	padding: 3%;
+	/*border: 1px black solid;*/
+	
+}
+
+figcaption {
+	color: #FCFFF5;
+	padding-bottom:1%; 
+	border: 1px black solid;
+}
+
+footer {
+	background-color: #80B7C5;
+	padding: 1%;
+/*	border: 1px black solid;*/
+	
+}
+
+footer a {
+	font-size: .7em;
+	font-family:'Biryani', sans-serif;
+	color: #FCFFF5;
+	text-decoration: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "hello";
+  clear: both;
+  height: 0;
+}
+
+#slogan{
+	font-size: 1.12em;
+	font-family: 'Quattrocento', serif;
+	letter-spacing: .1em;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+#description{
+	font-size: 1.1em;
+	margin-top: 20%;
+}
+
+#list{
+	margin-top: 125px;
+}
+
+
+figure img{
+	width: 100%;
+	border: 1px black solid;
+}
+
+.gradetitle{
+	font-family: 'Biryani', sans-serif;
+	text-transform: uppercase;
+	color: #F36063;
+	text-decoration: underline;
+}
+
+
+#two_column{
+/*	background-color: #FFB7CF;
+	padding: 20px;
+	border: 1px black solid;*/
+	
+}
+
+#left{
+	/*background-color: #E582A2;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 30%;
+	letter-spacing: 1;
+	margin-top: 170px;*/
+
+}
+
+#right{
+	background-color: #80B7C5;
+	border: 1px black solid;
+/*	padding: 20px;*/
+	float: right;
+	width: 62%;
+}
+
+
+@media screen and (max-width: 860px) {
+
+h1{
+	float: none;
+}
+
+nav {
+	float: none;
+	text-align: center;
+	width: 100%;
+}
+}
+
+
+@media screen and (max-width: 800px) {
+
+h1{
+	float: none;
+}
+
+nav {
+	float: none;
+	text-align: center;
+	width: 100%;
+}
+
+main {
+	width: 55%;
+}
+
+#right{
+	width: 45%;
+}
+
+figure {
+	float: none;
+	width: 100%;
+}
+}
+
+@media screen and (max-width: 500px) {
+
+body{
+	font-size: 14px;
+}
+
+h1{
+	float: right;
+}
+
+nav{
+	float: left;
+	width: 60%;
+	/*text-align: center;
+	width: 100%;*/
+}
+
+#right{
+	width: 100%;
+}
+	
+figure {
+	float: none;
+	width: 100%;
+}
+
+main {
+	float: none;
+	width: 100%;
+}
+
+#slogan{
+	text-align: center;
+	padding-bottom: 3%;
+}
+
+#description{
+	display: none;
+}
+
+#list{
+	display: none;
+}
+
+}
+ 	
+	
+
+
+
+
+
