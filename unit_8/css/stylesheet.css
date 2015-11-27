@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Quattrocento);
 @import url(https://fonts.googleapis.com/css?family=Biryani);
+@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
 *,
 *:before,
 *:after {
@@ -20,31 +21,30 @@ body {
 
 header {
 	background-color: #80B7C5;
-	border: 1px black solid;
+	/*border: 1px black solid;*/
 	padding: 1%;
 }
 
 h1 {
 	font-family:'Biryani', sans-serif;
+/*	font-family: 'Gloria Hallelujah', cursive;*/
 	font-size: 2.6em;
 	color: #FA064D;
-	background-color: #3E606F;
+	/*background-color: #3E606F;*/
 	display: block;
 	float: left;
 	line-height: 1em;
 	padding-top: .5%;
-	
 }
 
 nav {
 	background-color: #80B7C5;
-	/*border: 1px black solid;*/
 	text-align: right;
 	float: right;
 	width: 80%;
 	padding: .5%;
 	margin: .1%;
-	/*display: block;*/
+	display: block;
 	
 } 
 
@@ -69,7 +69,7 @@ section {
 
 main {
 	background-color: #80B7C5;
-	/*border: 1px black solid;*/
+/*	border: 1px black solid;*/
 	padding: 1%;
 	float: left;
 	width: 35%;
@@ -81,15 +81,16 @@ figure {
 	display: block;
 	float: left;
 	width: 50%;
-	padding: 3%;
-	/*border: 1px black solid;*/
+	padding: 2%;
+	border-top: 1px white solid;
+	border-left: 1px white solid;
 	
 }
 
 figcaption {
 	color: #FCFFF5;
 	padding-bottom:1%; 
-	border: 1px black solid;
+	/*border: 1px black solid;*/
 }
 
 footer {
@@ -115,6 +116,11 @@ footer a {
   height: 0;
 }
 
+/*#corner {
+	font-family: 'Gloria Hallelujah', cursive;
+	padding-left: 12%;
+}*/
+
 #slogan{
 	font-size: 1.12em;
 	font-family: 'Quattrocento', serif;
@@ -135,7 +141,7 @@ footer a {
 
 figure img{
 	width: 100%;
-	border: 1px black solid;
+	/*border: 1px black solid;*/
 }
 
 .gradetitle{
@@ -143,6 +149,10 @@ figure img{
 	text-transform: uppercase;
 	color: #F36063;
 	text-decoration: underline;
+}
+
+#menu {
+	display: none;
 }
 
 
@@ -166,11 +176,37 @@ figure img{
 
 #right{
 	background-color: #80B7C5;
-	border: 1px black solid;
+	/*border: 1px black solid;*/
 /*	padding: 20px;*/
 	float: right;
 	width: 62%;
 }
+
+div {
+	font-family:'Biryani', sans-serif;
+	position:relative;
+	text-align: center;
+	padding-top: 1.5%;
+	letter-spacing: .12em;
+}
+
+.circle{
+	position: absolute;
+	width: 60px; 
+	height: 60px; 
+	background-color: #FA064D; 
+	margin-top: -10px;
+	margin-left: -15px;
+	-moz-border-radius: 50px; 
+	-webkit-border-radius: 50px; 
+	border-radius: 50px;
+}
+/*
+#secondcircle{
+	margin-top: -10px;
+	margin-left: 160px;
+}
+*/
 
 
 @media screen and (max-width: 860px) {
@@ -187,30 +223,47 @@ nav {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 815px) {
+
 
 h1{
-	float: none;
+	float: left;
+	position: fixed;
+
+
 }
 
 nav {
-	float: none;
-	text-align: center;
-	width: 100%;
+	text-align: right;
+	float: right;
+	margin-bottom: 5%;
 }
+
+/*nav a {
+	padding-left: 2%;
+	padding-right: 1%;
+}*/
 
 main {
-	width: 55%;
+	width: 45%;
+	position: fixed;
+	margin-top: 20%;
 }
 
+
 #right{
-	width: 45%;
+	width: 55%;
 }
 
 figure {
 	float: none;
 	width: 100%;
 }
+
+#subject_nav {
+	display: none;
+}
+
 }
 
 @media screen and (max-width: 500px) {
@@ -220,11 +273,13 @@ body{
 }
 
 h1{
-	float: right;
+	float: left;
+	position: relative;
+	padding-top: 3%
 }
 
 nav{
-	float: left;
+	float: right;
 	width: 60%;
 	/*text-align: center;
 	width: 100%;*/
@@ -240,13 +295,35 @@ figure {
 }
 
 main {
+	position: relative;
 	float: none;
 	width: 100%;
+	margin: 3%;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	padding: .5em;
+	display: none;
+}
+
+div{
+	font-size: 1.3em;
+	padding-top: 6%;
+}
+
+#menu {
+	font-size: 4em;
+	padding: 5%;
+	display: block;
+	float: right;
 }
 
 #slogan{
 	text-align: center;
-	padding-bottom: 3%;
+	font-size: 1.5em
+	/*border: 1px solid white;*/
 }
 
 #description{
@@ -255,6 +332,18 @@ main {
 
 #list{
 	display: none;
+}
+
+.circle{
+	position: absolute;
+	width: 80px; 
+	height: 80px; 
+	/*background: red; 
+	margin-top: -10px;
+	margin-left: -15px;
+	-moz-border-radius: 50px; 
+	-webkit-border-radius: 50px; 
+	border-radius: 50px;*/
 }
 
 }
