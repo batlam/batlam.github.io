@@ -25,14 +25,19 @@ header {
 	padding: 1%;
 }
 
+
 h1 {
-	font-family:'Biryani', sans-serif;
+	/*font-family:'Biryani', sans-serif;
 	font-size: 2.6em;
-	color: #FA064D;
+	color: #FA064D;*/
 	display: block;
 	float: left;
-	line-height: 1em;
-	padding-top: .5%;
+}
+
+h1 img{
+	/*display: block;
+	float: left;*/
+	width: 75px;
 }
 
 nav {
@@ -41,7 +46,7 @@ nav {
 	float: right;
 	width: 80%;
 	padding: .5%;
-	margin: .1%;
+	/*margin: .1%;*/
 	display: block;
 	
 } 
@@ -55,12 +60,17 @@ nav a{
 	padding-right: 3%;
 }
 
-a:hover {
- 	color: black;
+#label_nav{
+	display:none;
 }
 
+#toggle{
+    display:none;
+}
+
+
 section {
-	background-color: #80B7C5;
+	/*background-color: #80B7C5;*/
 	/*border: 1px black solid;*/
 	/*padding: 20px;*/
 }
@@ -101,16 +111,18 @@ figcaption {
 
 footer {
 	background-color: #80B7C5;
+	font-size: .7em;
+	font-family:'Biryani', sans-serif;
 	padding: 1%;
+	margin-top:10%;
 /*	border: 1px black solid;*/
 	
 }
 
 footer a {
-	font-size: .7em;
-	font-family:'Biryani', sans-serif;
 	color: #FCFFF5;
 	text-decoration: none;
+/*	font-size: .7em;*/
 }
 
 .clearfix:after {
@@ -122,12 +134,7 @@ footer a {
   height: 0;
 }
 
-/*#corner {
-	font-family: 'Gloria Hallelujah', cursive;
-	padding-left: 12%;
-}*/
-
-.diagonal{
+/*.diagonal{
 	position: absolute;
 	width: 800px;
 	height: 4px;
@@ -135,7 +142,7 @@ footer a {
 	border-bottom: 1px solid white;
 	-webkit-transform: rotate(-36deg);
 			transoform: rotate(-36deg);
-}
+}*/
 
 #slogan{
 	font-size: 1.12em;
@@ -163,11 +170,33 @@ figure img{
 	border-radius: 20px;
 }
 
+
 .gradetitle{
 	font-family: 'Biryani', sans-serif;
 	text-transform: uppercase;
-	color: #F36063;
+	/*color: #F36063;*/
 	text-decoration: underline;
+}
+
+.gradetitle a{
+	font-family: 'Biryani', sans-serif;
+	text-transform: uppercase;
+	/*color: #F36063;*/
+	color: #FA064D;
+	text-decoration: underline;
+}
+
+.circle a{
+	text-decoration: none;
+	color: #FCFFF5;
+}
+
+.small a{
+	color: #FA064D;
+}
+
+a:hover {
+ 	color: black;
 }
 
 #menu {
@@ -238,7 +267,7 @@ figure img{
 
 #thirdcircle {
 	margin-top: -20px;
-	margin-left: 200px;
+	margin-left: 125px;
 }
 
 #fourthcircle {
@@ -246,30 +275,38 @@ figure img{
 	margin-left: 200px;
 }
 
-/*
-#secondcircle{
-	margin-top: -10px;
-	margin-left: 160px;
+.arrow{
+	display: block;
+	margin: 0 auto;
 }
-*/
+
+.small_title {
+		font-family: 'Biryani', sans-serif;
+		color: #FCFFF5;
+}
 
 .small{
 	display: block;
 	/*float: left;*/
 	width: 25%;
 	padding: 2%;
-	/*border-top: 1px white solid;
-	border-left: 1px white solid;*/
+/*	border-top: 1px white solid;
+	border-left: 1px white solid;
+}*/
+}
 
-
+/*
 figure img four across{
 	width: 25%;
 	border:1px solid #;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
-}
+}*/*/
 
+#toggle{
+	display: none;
+}
 
 @media screen and (max-width: 860px) {
 
@@ -308,7 +345,7 @@ nav {
 
 main {
 	width: 45%;
-	position: fixed;
+/*	position: fixed;*/
 	margin-top: 20%;
 }
 
@@ -322,11 +359,38 @@ figure {
 	width: 100%;
 }
 
+article{
+	width: 100%;
+}
+
+.small{
+	float: left;
+	display: block;
+	width: 50%;
+}
+
 #subject_nav {
 	display: none;
 }
 
+nav {
+	display: none;
 }
+
+#label_nav{
+	display: block;
+  /*  margin:20px 0 0;*/
+    /*float: left;*/
+    font-size: 4em;
+	padding: 5%;
+	/*margin-top: 25%;*/
+	/*margin-left: 35%;*/
+}
+
+#toggle:checked + nav{
+     display:block;
+}
+
 
 @media screen and (max-width: 500px) {
 
@@ -339,6 +403,8 @@ h1{
 	position: relative;
 	padding-top: 3%
 }
+
+
 
 nav{
 	float: right;
@@ -363,29 +429,43 @@ main {
 	margin: 3%;
 }
 
+#label_nav{
+	display: block;
+  /*  margin:20px 0 0;*/
+    float: right;
+    font-size: 4em;
+	padding: 0;
+	margin-top: 5%;
+}
+
+nav{
+	display: none;
+}
+
 nav a {
 	color: #fff;
 	text-decoration: none;
 	padding: .5em;
-	display: none;
+/*	display: none;*/
+	display: block;
 }
 
-div{
-	font-size: 1.3em;
+nav a:active{
+     background-color:yellow;
+    }
+
+#toggle:checked + nav{
+     display:block;
+    }
+
+div label{
+	font-size: 1.1em;
 	padding-top: 6%;
 }
 
-#menu {
-	font-size: 4em;
-	padding: 5%;
-	display: block;
-	float: right;
-}
 
 #slogan{
-	text-align: center;
-	font-size: 1.5em
-	/*border: 1px solid white;*/
+	font-size: 1.2em;
 }
 
 #description{
@@ -395,6 +475,20 @@ div{
 #list{
 	display: none;
 }
+
+.small_description{
+	display: none;
+}
+
+.circle span {
+	padding-top: 10%;
+}
+
+form {
+	margin-top: 0;
+}
+
+
 
 /*.circle{
 	position: absolute;

@@ -3,10 +3,19 @@
 <html>
 
 <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Free content for K-12 teachers.">
+		<meta name="keywords" content="free lessons, k-12, lesson plans">
+
 	<title>Teacher Corner</title>
+
+	<!--[if lt IE 9]>
+		    <script src="html5shiv.js"></script>
+		<![endif]-->
+
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-	<meta name="viewport" content="width=device-width, initial scale=1">
 </head>
 
 <body>
@@ -15,6 +24,7 @@
 
 
 		<h1>Teacher<br><span id="corner">Corner</span></h1>
+		<div class="diagonal"></div>
 		
 		
 			<nav id="grade_nav">
@@ -27,8 +37,8 @@
 			</nav>
 
 			<nav id="subject_nav">
-				<a href="#"><!-- teacher  -->sweeps</a>
-				<a href="#"><!-- student  -->contests</a>
+				<a href="#"><!-- teacher  -->sweeps & contests</a>
+				<!-- <a href="#">student contests</a> -->
 				<a href="#">english</a>
 				<a href="#">math</a>
 				<a href="#">social studies</a>
@@ -42,37 +52,85 @@
 		<main id="left">
 
 			<p id="slogan"> Free content for K-12 teachers.</p>
+			
 			<p id="description">We partner with non-profits, corporations and government agencies to develop unique and valuable free content for teachers to use in their classrooms.</p>
-			<p id="list">Send me an email when a new program is is developed.</p>
+			<!-- <p id="list">Send me an email when a new program is is developed.</p> -->
+			
+			<form action="/my-handling-form-page" method="post">
+			
+			<div>
+				<label for="mail"><!-- <p id="list"> -->Send me an email when a new program is developed.<!-- </p> --></label>
+				<input type="email" id="mail" name="user_email"/>
+			</div>
+			<div class=button>
+				<button type="submit">send</button>
+			</div>
+
+			</form>
+		
 		</main>
 
 
 		<aside id="right">
 	
 			<figure>
-				<div class="circle">K-2</div>
+				<div class="circle"><span>K-2</span></div>
 				<img src="images/apple_2.jpg" alt="apple" title="k-2 featured">
 				<figcaption><span class="gradetitle">K-2 Featured</span> Teach math concepts with apples, brought to you by The Apple Foundation.</figcaption>
 			</figure>
 			
 			<figure>
-				<div class="circle" id="secondcircle">3-5</div>
+				<div class="circle" id="secondcircle"><span>3-5</span></div>
 				<img src="images/coraline_2.jpg" alt="coraline" title="3-5 featured">
 				<figcaption><span class="gradetitle">3-5 Featured</span> Sony Pictures partnered with us to develop these story-starters inspired by Coraline.</figcaption>
 			</figure>
 			
 			<figure>
-				<div class="circle">6-8</div>
+				<div class="circle" id="thirdcircle"><span>6-8</span></div>
 				<img src="images/graph_2.jpg" alt="graph" title="6-8 featured">
 				<figcaption><span class="gradetitle">6-8 Featured</span> We worked with The Actuarial Foundation to develop a graphing math activity.</figcaption>
 			</figure>
 
 			<figure>
-				<div class="circle">9-12</div>
+				<div class="circle" id="fourthcircle"><span>9-12</span></div>
 				<img src="images/environment_2.jpg" alt="environment" title="9-12 featured">
 				<figcaption><span class="gradetitle"> 9-12 Featured</span> Lexus Eco Challenge asks students to develop a plan to protect their environment.</figcaption>
 			</figure>
 		</aside>
+
+		</section>
+
+		<article class="clearfix">
+			
+			<figure class="small">
+				<img src="images/samplesmallimage.jpg" alt="k-2" title="k-2">
+				<figcaption class="small_title">Literacy Materials</figcaption>
+				<figcaption> Teacher literacy at a young age through music, and interactive materials</figcaption>
+				<figcaption><a href="scholastic.com/first5ca">scholastic.com/first5ca</a></figcaption>
+			</figure>
+
+			<figure class="small">
+				<img src="images/samplesmallimage.jpg" alt="k-2" title="k-2">
+				<figcaption><span class="small images">Literacy Materials</span></figcaption>
+				<figcaption> Teacher literacy at a young age through music, and interactive materials</figcaption>
+			</figure>
+
+			<figure class="small">
+				<img src="images/samplesmallimage.jpg" alt="k-2" title="k-2">
+				<figcaption><span class="small images">Literacy Materials</span></figcaption>
+				<figcaption> Teacher literacy at a young age through music, and interactive materials</figcaption>
+			</figure>
+
+			<figure class="small">
+				<img src="images/samplesmallimage.jpg" alt="k-2" title="k-2">
+				<figcaption><span class="small images">Literacy Materials</span></figcaption>
+				<figcaption> Teacher literacy at a young age through music, and interactive materials</figcaption>
+			</figure>
+
+		</article>
+
+
+
 		
 	</section>
 
