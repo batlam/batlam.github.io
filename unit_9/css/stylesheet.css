@@ -26,15 +26,15 @@ header {
 
 
 h1 {
+	position: absolute;
 	display: block;
 	float: left;
-	position: fixed;
-	z-index: -1;
+	
 }
 
 h1 img{
 	position: absolute;
-	width: 250px;
+	width: 300px;
 }
 
 nav {
@@ -70,13 +70,10 @@ main {
 	float: left;
 	width: 35%;
 	letter-spacing: 2;
-	margin-top: 16%;
-	position: fixed;
-	z-index: -1;
+	margin-top: 12%;
 }
 
 #bottom {
-	/*background-color: yellow;*/
 	background-color: #80B7C5;
 }
 
@@ -130,6 +127,7 @@ footer a {
 	font-family: 'Quattrocento', serif;
 	letter-spacing: .1em;
 	padding: 0;
+	margin-top: 90px;
 }
 
 #description{
@@ -186,33 +184,17 @@ a:hover {
 	
 }
 
-#left{
-	/*background-color: #E582A2;
-	border: 1px black solid;
-	padding: 20px;
-	float: left;
-	width: 30%;
-	letter-spacing: 1;
-	margin-top: 170px;*/
+/*#left{
+	position: fixed;
+	z-index: -1;
 
-}
+}*/
 
 #right{
 	background-color: #80B7C5;
-	/*border: 1px black solid;*/
-/*	padding: 20px;*/
 	float: right;
 	width: 62%;
 }
-
-/*div {
-	font-family:'Biryani', sans-serif;
-	position:relative;
-	text-align: center;
-	padding-top: 1.5%;
-	letter-spacing: .12em;
-}*/
-
 
 .circle{
 	position: absolute;
@@ -242,7 +224,7 @@ a:hover {
 #thirdcircle {
 	/*margin-top: -20px;
 	margin-left: 125px;*/
-	background-color: #FFDB80;
+	background-color: #EE8B0C;
 }
 
 #fourthcircle {
@@ -265,22 +247,9 @@ a:hover {
 
 .small{
 	display: block;
-	/*float: left;*/
 	width: 25%;
 	padding: 2%;
-/*	border-top: 1px white solid;
-	border-left: 1px white solid;
-}*/
 }
-
-/*
-figure img four across{
-	width: 25%;
-	border:1px solid #;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
-}*/*/
 
 #toggle{
 	display: none;
@@ -292,13 +261,16 @@ h1 img {
 	width: 335px;
 }
 
+main {
+	margin-top: 11%;
 }
 
+}
 
 @media screen and (max-width: 1050px) {
 
-main{
-	margin-top: 16%;
+h1 img {
+	width: 250px;
 }
 
 nav {
@@ -306,7 +278,7 @@ nav {
 }
 
 main {
-	margin-top: 20%;
+	margin-top: 11%;
 	font-size: .9em;
 }
 }
@@ -333,9 +305,9 @@ h1{
 main {
 	width: 45%;
 	position: fixed;
-	margin-top: 30%;
+	margin-top: 20%;
 	padding-right: 1.2%;
-	z-index: -1
+	z-index: -1;
 }
 
 
@@ -380,22 +352,34 @@ header section{
      display:block;
 }
 
+#subject_nav{
+	display: none;
+}
+
 #bottom {
 	/*background-color: yellow;*/
 	background-color: #80B7C5;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 696px) {
 
 	main{
-		margin-top: 40%;
+		margin-top: 25%;
 	}
+
+	h1 img {
+		width: 200px;
+	}
+
+	.small_description{
+	display: none;
+}
 }
 
 @media screen and (max-width: 500px) {
 
 h1 img {
-	width: 120px;
+	width: 125px;
 }
 
 body{
@@ -431,7 +415,10 @@ main {
 	position: relative;
 	float: none;
 	width: 100%;
-	margin: 3%;
+	margin-top: -7%;
+	margin-bottom: 2%;
+	padding: 0;
+	font-size: 1.1em;
 }
 
 #label_nav{
@@ -453,9 +440,6 @@ header section{
 	display: block;
 }*/
 
-nav a:active{
-     background-color:yellow;
-    }
 
 #toggle:checked + section{
      display:block;
@@ -490,6 +474,10 @@ form {
 
 .circle{
 	margin-left: -9px;
+}
+
+#subject_nav{
+	display: none;
 }
 
 
