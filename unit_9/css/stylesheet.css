@@ -28,6 +28,8 @@ header {
 h1 {
 	display: block;
 	float: left;
+	position: fixed;
+	z-index: -1;
 }
 
 h1 img{
@@ -68,7 +70,14 @@ main {
 	float: left;
 	width: 35%;
 	letter-spacing: 2;
-	margin-top: 14%;
+	margin-top: 16%;
+	position: fixed;
+	z-index: -1;
+}
+
+#bottom {
+	/*background-color: yellow;*/
+	background-color: #80B7C5;
 }
 
 form {
@@ -90,6 +99,7 @@ figure {
 figcaption {
 	color: #FCFFF5;
 	padding-bottom:1%; 
+	font-size: 1.1em;
 }
 
 footer {
@@ -123,7 +133,7 @@ footer a {
 }
 
 #description{
-	font-size: 1.2em;
+	font-size: 1.1em;
 	margin-top: 20%;
 	letter-spacing: .05em;
 }
@@ -223,22 +233,24 @@ a:hover {
     line-height: 80px;
 }
 
-/*#secondcircle {
-	margin-top: 50px;
-	margin-left: -15px;
-	background-color: orange;
+#secondcircle {
+	/*margin-top: 50px;
+	margin-left: -15px;*/
+	background-color: #059E89;
 }
 
 #thirdcircle {
-	margin-top: -20px;
-	margin-left: 125px;
+	/*margin-top: -20px;
+	margin-left: 125px;*/
+	background-color: #FFDB80;
 }
 
 #fourthcircle {
-	margin-top: -20px;
-	margin-left: 200px;
+/*	margin-top: -20px;
+	margin-left: 200px;*/
+	background-color: #E68CF2;
 }
-*/
+
 .arrow{
 	text-align: center;
 	margin-top: 5%;
@@ -274,10 +286,19 @@ figure img four across{
 	display: none;
 }
 
+@media screen and (min-width: 1300px) {
+
+h1 img {
+	width: 335px;
+}
+
+}
+
+
 @media screen and (max-width: 1050px) {
 
 main{
-	margin-top: 16%
+	margin-top: 16%;
 }
 
 nav {
@@ -350,12 +371,12 @@ article{
 	/*margin-top: 0;*/
 }
 
-nav{
+header section{
 	display: none;
 }
 
 
-#toggle:checked + nav{
+#toggle:checked + section {
      display:block;
 }
 
@@ -420,7 +441,7 @@ main {
 	padding: 0;
 }
 
-nav{
+header section{
 	display: none;
 }
 
@@ -436,7 +457,7 @@ nav a:active{
      background-color:yellow;
     }
 
-#toggle:checked + nav{
+#toggle:checked + section{
      display:block;
     }
 
