@@ -21,32 +21,26 @@ body {
 
 header {
 	background-color: #80B7C5;
-	/*border: 1px black solid;*/
 	padding: 1%;
 }
 
 
 h1 {
-	/*font-family:'Biryani', sans-serif;
-	font-size: 2.6em;
-	color: #FA064D;*/
 	display: block;
 	float: left;
 }
 
 h1 img{
-	/*display: block;
-	float: left;*/
-	width: 75px;
+	position: absolute;
+	width: 250px;
 }
 
 nav {
 	background-color: #80B7C5;
 	text-align: right;
 	float: right;
-	width: 80%;
+	width: 55%;
 	padding: .5%;
-	/*margin: .1%;*/
 	display: block;
 	
 } 
@@ -68,25 +62,18 @@ nav a{
     display:none;
 }
 
-
-section {
-	/*background-color: #80B7C5;*/
-	/*border: 1px black solid;*/
-	/*padding: 20px;*/
-}
-
 main {
 	background-color: #80B7C5;
-/*	border: 1px black solid;*/
 	padding: 1%;
 	float: left;
 	width: 35%;
 	letter-spacing: 2;
-	margin-top: 12%;
+	margin-top: 14%;
 }
 
 form {
-	margin-top: 125px;
+	margin-top: 20%;
+	font-size: 1.2em;
 }
 
 .button {
@@ -98,15 +85,11 @@ figure {
 	float: left;
 	width: 50%;
 	padding: 2%;
-	/*border-top: 1px white solid;
-	border-left: 1px white solid;*/
-	
 }
 
 figcaption {
 	color: #FCFFF5;
 	padding-bottom:1%; 
-	/*border: 1px black solid;*/
 }
 
 footer {
@@ -115,14 +98,12 @@ footer {
 	font-family:'Biryani', sans-serif;
 	padding: 1%;
 	margin-top:10%;
-/*	border: 1px black solid;*/
-	
+	letter-spacing: .05em;
 }
 
 footer a {
 	color: #FCFFF5;
 	text-decoration: none;
-/*	font-size: .7em;*/
 }
 
 .clearfix:after {
@@ -134,31 +115,17 @@ footer a {
   height: 0;
 }
 
-/*.diagonal{
-	position: absolute;
-	width: 800px;
-	height: 4px;
-	left: -70px;
-	border-bottom: 1px solid white;
-	-webkit-transform: rotate(-36deg);
-			transoform: rotate(-36deg);
-}*/
-
 #slogan{
-	font-size: 1.12em;
+	font-size: 1.4em;
 	font-family: 'Quattrocento', serif;
 	letter-spacing: .1em;
 	padding: 0;
-	margin-bottom: 20px;
 }
 
 #description{
-	font-size: 1.1em;
+	font-size: 1.2em;
 	margin-top: 20%;
-}
-
-#list{
-	margin-top: 125px;
+	letter-spacing: .05em;
 }
 
 
@@ -174,14 +141,12 @@ figure img{
 .gradetitle{
 	font-family: 'Biryani', sans-serif;
 	text-transform: uppercase;
-	/*color: #F36063;*/
 	text-decoration: underline;
 }
 
 .gradetitle a{
 	font-family: 'Biryani', sans-serif;
 	text-transform: uppercase;
-	/*color: #F36063;*/
 	color: #FA064D;
 	text-decoration: underline;
 }
@@ -241,6 +206,7 @@ a:hover {
 
 .circle{
 	position: absolute;
+	text-align: center;
 	width: 80px; 
 	height: 80px; 
 	background-color: #FA064D; 
@@ -252,17 +218,15 @@ a:hover {
 }
 
 .circle span {
-	font-family:'Biryani', sans-serif;
-	position: relative;
-	display: block;
-	padding-top: 32%;
-	padding-left: 32%;
-
+    font-family: 'Biryani', sans-serif;
+    vertical-align: middle;
+    line-height: 80px;
 }
 
-#secondcircle {
+/*#secondcircle {
 	margin-top: 50px;
 	margin-left: -15px;
+	background-color: orange;
 }
 
 #thirdcircle {
@@ -274,10 +238,12 @@ a:hover {
 	margin-top: -20px;
 	margin-left: 200px;
 }
-
+*/
 .arrow{
-	display: block;
-	margin: 0 auto;
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	font-size: 2em;
 }
 
 .small_title {
@@ -308,16 +274,19 @@ figure img four across{
 	display: none;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1050px) {
 
-h1{
-	float: none;
+main{
+	margin-top: 16%
 }
 
 nav {
-	float: none;
-	text-align: center;
-	width: 100%;
+	width: 60%;
+}
+
+main {
+	margin-top: 20%;
+	font-size: .9em;
 }
 }
 
@@ -327,16 +296,13 @@ nav {
 
 h1{
 	float: left;
-	position: fixed;
-
-
 }
 
-nav {
+/*nav {
 	text-align: right;
 	float: right;
 	margin-bottom: 5%;
-}
+}*/
 
 /*nav a {
 	padding-left: 2%;
@@ -345,8 +311,10 @@ nav {
 
 main {
 	width: 45%;
-/*	position: fixed;*/
-	margin-top: 20%;
+	position: fixed;
+	margin-top: 30%;
+	padding-right: 1.2%;
+	z-index: -1
 }
 
 
@@ -369,49 +337,65 @@ article{
 	width: 50%;
 }
 
-#subject_nav {
+/*#subject_nav {
 	display: none;
-}
-
-nav {
-	display: none;
-}
+}*/
 
 #label_nav{
 	display: block;
   /*  margin:20px 0 0;*/
-    /*float: left;*/
+    float: right;
     font-size: 4em;
-	padding: 5%;
-	/*margin-top: 25%;*/
-	/*margin-left: 35%;*/
+	/*padding: 5%;*/
+	/*margin-top: 0;*/
 }
+
+nav{
+	display: none;
+}
+
 
 #toggle:checked + nav{
      display:block;
 }
 
+#bottom {
+	/*background-color: yellow;*/
+	background-color: #80B7C5;
+}
+
+@media screen and (max-width: 700px) {
+
+	main{
+		margin-top: 40%;
+	}
+}
 
 @media screen and (max-width: 500px) {
+
+h1 img {
+	width: 120px;
+}
 
 body{
 	font-size: 14px;
 }
 
-h1{
+/*h1{
 	float: left;
 	position: relative;
 	padding-top: 3%
 }
+*/
 
 
-
-nav{
+/*nav{
 	float: right;
+	margin: 0;
 	width: 60%;
 	/*text-align: center;
 	width: 100%;*/
-}
+/*}*/
 
 #right{
 	width: 100%;
@@ -431,24 +415,22 @@ main {
 
 #label_nav{
 	display: block;
-  /*  margin:20px 0 0;*/
     float: right;
     font-size: 4em;
 	padding: 0;
-	margin-top: 5%;
 }
 
 nav{
 	display: none;
 }
 
-nav a {
+/*nav a {
 	color: #fff;
 	text-decoration: none;
 	padding: .5em;
-/*	display: none;*/
+	display: none;
 	display: block;
-}
+}*/
 
 nav a:active{
      background-color:yellow;
@@ -465,7 +447,8 @@ div label{
 
 
 #slogan{
-	font-size: 1.2em;
+	font-size: 1.25em;
+	text-align: center;
 }
 
 #description{
@@ -480,35 +463,15 @@ div label{
 	display: none;
 }
 
-.circle span {
-	padding-top: 10%;
-}
-
 form {
-	margin-top: 0;
+	display: none;
+}
+
+.circle{
+	margin-left: -9px;
 }
 
 
-
-/*.circle{
-	position: absolute;
-	width: 80px; 
-	height: 80px; 
-	background: red; 
-	margin-top: -10px;
-	margin-left: -15px;
-	-moz-border-radius: 50px; 
-	-webkit-border-radius: 50px; 
-	border-radius: 50px;
-}
-
-.circle span {
-	font-family:'Biryani', sans-serif;
-	position: relative;
-	display: block;
-	padding-top: 10%;
-	padding-left: 25%;
-*/
 }
 
 
