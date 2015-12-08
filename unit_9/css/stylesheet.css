@@ -22,13 +22,15 @@ body {
 header {
 	background-color: #80B7C5;
 	padding: 1%;
+	/*z-index: -1;*/
 }
 
 
 h1 {
 	position: absolute;
 	display: block;
-	float: left;
+	float: left; 
+
 	
 }
 
@@ -255,6 +257,11 @@ a:hover {
 	display: none;
 }
 
+.anchor{
+	clear: both;
+	display: block;
+}
+
 @media screen and (min-width: 1300px) {
 
 h1 img {
@@ -288,7 +295,9 @@ main {
 
 
 h1{
-	float: left;
+/*	float: left;*/
+	/*position: fixed;
+	z-index: -1;*/
 }
 
 /*nav {
